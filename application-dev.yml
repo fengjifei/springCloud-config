@@ -19,6 +19,7 @@ spring:
     show-sql: true
 #      uri: mongodb://用户名:密码@IP:端口/数据库名
 
+test: mytest
 logging:
   file: ../Dev/logs/business-kafka.log
   level:
@@ -30,5 +31,3 @@ dubbo:
        port: 20999
     registry:
         address: zookeeper://115.182.74.89:2181
-test：mytest
-
