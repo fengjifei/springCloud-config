@@ -1,0 +1,33 @@
+spring:
+#  jmx:
+#    enabled: false
+  redis:
+      host: 115.182.74.89
+##      host: 192.168.113.181
+      port: 6379
+      database: 0
+      password: a77af61dd9f8e6c974b9f092032998d0
+#      redis集群配置
+#      cluster:
+#        nodes: 115.182.74.91:7000,115.182.74.91:7001,115.182.74.91:7002,115.182.74.90:7003,115.182.74.90:7004,115.182.74.90:7005
+#        max-redirects: 3
+  data:
+    mongodb:
+#       uri: mongodb://192.168.113.181:27017/Fastdfs
+       uri: mongodb://115.182.74.89:27017/idiomgame
+  jpa:
+    show-sql: true
+#      uri: mongodb://用户名:密码@IP:端口/数据库名
+
+logging:
+  file: ../Dev/logs/business-kafka.log
+  level:
+     com.yingmoo: DEBUG
+
+dubbo:
+  provider:
+    protocol:
+       port: 20999
+    registry:
+        address: zookeeper://115.182.74.89:2181
+
