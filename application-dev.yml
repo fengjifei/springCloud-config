@@ -30,4 +30,5 @@ dubbo:
        port: 20999
     registry:
         address: zookeeper://115.182.74.89:2181
+test：mytest
 
